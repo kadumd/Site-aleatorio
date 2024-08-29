@@ -10,7 +10,7 @@
         "use": "@vercel/static"
       },
       {
-        "src": "cayo/**/*",
+        "src": "cayo/front/**/*",
         "use": "@vercel/static"
       },
       {
