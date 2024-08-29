@@ -38,6 +38,68 @@
       {
         "src": "/carlos/filme.json",
         "dest": "/carlos/filme.json"
+      },
+      
+
+
+      {
+        "src": "/antonio/index.html",
+        "dest": "/antonio/index.html"
+      },
+      {
+        "src": "/antonio/main.css",
+        "dest": "/antonio/main.css"
+      },
+      {
+        "src": "/antonio/script.js",
+        "dest": "/antonio/script.js"
+      },
+
+
+
+      {
+        "src": "/cayo/front/index.html",
+        "dest": "/cayo/front/index.html"
+      },
+      {
+        "src": "/cayo/front/main.css",
+        "dest": "/cayo/front/main.css"
+      },
+      {
+        "src": "/cayo/front/script.js",
+        "dest": "/cayo/front/script.js"
+      },
+
+
+
+      {
+        "src": "/pedro/index.html",
+        "dest": "/pedro/index.html"
+      },
+      {
+        "src": "/pedro/filmes.html",
+        "dest": "/pedro/filmes.html"
+      },
+      {
+        "src": "/pedro/css/index.css",
+        "dest": "/pedro/css/index.css"
+      },
+      {
+        "src": "/pedro/css/filmes.css",
+        "dest": "/pedro/css/filmes.css"
+      },
+      {
+        "src": "/pedro/script.js",
+        "dest": "/pedro/script.js"
+      },
+
+      {
+        "src": "/pedro/data/filmes.css",
+        "dest": "/pedro/data/filmes.css"
+      },
+      {
+        "src": "/pedro/dados.json",
+        "dest": "/pedro/dados.json"
       }
     ]
   }
