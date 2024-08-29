@@ -1,0 +1,17 @@
+[
+    {
+        "id": 0,
+        "titulo": "sonic 1",
+        "data-de-lancamento": "25 de janeiro de 2020"
+    },
+    {
+        "id": 1,
+        "titulo": "sonic 2",
+        "data-de-lancamento": "8 de abril de 2022"
+    },
+    {
+        "id": 2,
+        "titulo": "sonic 3",
+        "data-de-lancamento": "20 de dezembro de 2024"
+    }
+]

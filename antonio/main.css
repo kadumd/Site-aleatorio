@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+p{
+    color: red;
+}
+
+.textoBolsonaro{
+    background-color: black;
+    color: red;
+    padding-left: 350px;
+}
+
+.bolsonaroDiv{
+    display: flex;
+    padding-left: 600px;
+}
+
+.bolsonaro{
+    display: flex;
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+    border: rgb(0, 110, 7) solid 3px;
+}

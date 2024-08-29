@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+}
+
+.cartas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: solid black 1px;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+}
+
+
+.shrek{
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    animation: animacao 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacao {
+    0%{top: 100%; left: 0%;}
+    100%{top: -100%; left: 0%;}
+}
+
+
+
+.otario{
+    position: absolute;
+    display: none;
+    height: 100px;
+    width: 100px;
+    animation: animacao2 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacao2 {
+    0%{top: 0px; left: 0px;}
+    25%{top: 0px; left: 1300px;}
+    50%{top: 500px; left: 0px;}
+    100%{top: 700px; left: 1300px;}
+}

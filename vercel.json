@@ -1,0 +1,43 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "carlos/**/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src":"antonio/**/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "cayo/**/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src":"pedro/**/*",
+        "use": "@vercel/static"
+      },
+      {
+        "src":"daniel/**/*",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/",
+        "dest": "/carlos/index.html"
+      },
+      {
+        "src": "/carlos/main.css",
+        "dest": "/carlos/main.css"
+      },
+      {
+        "src": "/carlos/script.js",
+        "dest": "/carlos/script.js"
+      },
+      {
+        "src": "/carlos/filme.json",
+        "dest": "/carlos/filme.json"
+      }
+    ]
+  }
