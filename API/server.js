@@ -94,44 +94,6 @@ const servidor = http.createServer((pedido, resposta) => {
         })
     }
     //----------------------------------------------------------------------------------------------------------------------------
-    if (pedido.url === '/cayo/front/index.html') {
-        fs.readFile(__dirname + 'cayo/front/index.html', (erro, dadosDoArquivo) => {
-            if (erro) {
-                resposta.writeHead(500, { 'Content-Type': 'text/plain' });
-                resposta.end('Erro no servidor!');
-                return;
-            }
-            resposta.writeHead(200, { 'Content-Type': 'text/html' });
-            resposta.end(dadosDoArquivo);
-            return
-        })
-    }
-
-    if (pedido.url === '/cayo/front/main.css') {
-        fs.readFile(__dirname + 'cayo/front/main.css', (erro, dadosDoArquivo) => {
-            if (erro) {
-                resposta.writeHead(500, { 'Content-Type': 'text/plain' });
-                resposta.end('Erro no servidor!');
-                return;
-            }
-            resposta.writeHead(200, { 'Content-Type': 'text/css' });
-            resposta.end(dadosDoArquivo);
-            return
-        })
-    }
-    if (pedido.url === '/cayo/front/main.js') {
-        fs.readFile(__dirname + 'cayo/front/main.js', (erro, dadosDoArquivo) => {
-            if (erro) {
-                resposta.writeHead(500, { 'Content-Type': 'text/plain' });
-                resposta.end('Erro no servidor!');
-                return;
-            }
-            resposta.writeHead(200, { 'Content-Type': 'text/javascript' });
-            resposta.end(dadosDoArquivo);
-            return
-        })
-    }
-    //----------------------------------------------------------------------------------------------------------------------------
     if (pedido.url === '/pedro/index.html') {
         fs.readFile(__dirname + 'pedro/index.html', (erro, dadosDoArquivo) => {
             if (erro) {
