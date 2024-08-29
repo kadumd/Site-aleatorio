@@ -94,8 +94,8 @@ const servidor = http.createServer((pedido, resposta) => {
         })
     }
     //----------------------------------------------------------------------------------------------------------------------------
-    if (pedido.url === '/cayo/index.html') {
-        fs.readFile(__dirname + 'cayo/index.html', (erro, dadosDoArquivo) => {
+    if (pedido.url === '/cayo/front/index.html') {
+        fs.readFile(__dirname + 'cayo/front/index.html', (erro, dadosDoArquivo) => {
             if (erro) {
                 resposta.writeHead(500, { 'Content-Type': 'text/plain' });
                 resposta.end('Erro no servidor!');
@@ -107,8 +107,8 @@ const servidor = http.createServer((pedido, resposta) => {
         })
     }
 
-    if (pedido.url === '/cayo/main.css') {
-        fs.readFile(__dirname + 'cayo/main.css', (erro, dadosDoArquivo) => {
+    if (pedido.url === '/cayo/front/main.css') {
+        fs.readFile(__dirname + 'cayo/front/main.css', (erro, dadosDoArquivo) => {
             if (erro) {
                 resposta.writeHead(500, { 'Content-Type': 'text/plain' });
                 resposta.end('Erro no servidor!');
@@ -119,8 +119,8 @@ const servidor = http.createServer((pedido, resposta) => {
             return
         })
     }
-    if (pedido.url === '/cayo/main.js') {
-        fs.readFile(__dirname + 'cayo/main.js', (erro, dadosDoArquivo) => {
+    if (pedido.url === '/cayo/front/main.js') {
+        fs.readFile(__dirname + 'cayo/front/main.js', (erro, dadosDoArquivo) => {
             if (erro) {
                 resposta.writeHead(500, { 'Content-Type': 'text/plain' });
                 resposta.end('Erro no servidor!');
@@ -134,6 +134,19 @@ const servidor = http.createServer((pedido, resposta) => {
     //----------------------------------------------------------------------------------------------------------------------------
     if (pedido.url === '/pedro/index.html') {
         fs.readFile(__dirname + 'pedro/index.html', (erro, dadosDoArquivo) => {
+            if (erro) {
+                resposta.writeHead(500, { 'Content-Type': 'text/plain' });
+                resposta.end('Erro no servidor!');
+                return;
+            }
+            resposta.writeHead(200, { 'Content-Type': 'text/html' });
+            resposta.end(dadosDoArquivo);
+            return
+        })
+    }
+
+    if (pedido.url === '/pedro/filmes.html') {
+        fs.readFile(__dirname + 'pedro/filmes.html', (erro, dadosDoArquivo) => {
             if (erro) {
                 resposta.writeHead(500, { 'Content-Type': 'text/plain' });
                 resposta.end('Erro no servidor!');
