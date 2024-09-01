@@ -10,7 +10,7 @@
         "use": "@vercel/static"
       },
       {
-        "src": "cayo/front/**/*",
+        "src": "cayo/**/*",
         "use": "@vercel/static"
       },
       {
@@ -58,16 +58,20 @@
 
 
       {
-        "src": "/cayo/front/index.html",
-        "dest": "/cayo/front/index.html"
+        "src": "/cayo/index.html",
+        "dest": "/cayo/index.html"
       },
       {
-        "src": "/cayo/front/main.css",
-        "dest": "/cayo/front/main.css"
+        "src": "/cayo/main.css",
+        "dest": "/cayo/main.css"
       },
       {
-        "src": "/cayo/front/script.js",
-        "dest": "/cayo/front/script.js"
+        "src": "/cayo/main.js",
+        "dest": "/cayo/main.js"
+      },
+      {
+        "src": "/cayo/main.json",
+        "dest": "/cayo/main.json"
       },
 
 

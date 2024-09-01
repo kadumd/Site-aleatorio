@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header{
+    border: 2px solid rgba(255, 255, 255, 0.624);
+}
+header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.624);
+}
+
+
+header li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    float: center;
+    justify-content:center;
+    gap: 50px;
+    font-size: 50px;
+}
+
+nav a:hover{
+    color: rgba(255, 255, 255, 0.624);
+    box-shadow: 3px 2px 30px rgba(255, 255, 255, 0.624);
+    border-radius: 10px;
+}
+
+body{
+    overflow: scroll;
+    background-image: url(./img/giphy.webp);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+    gap: 20vh;
+}
+
+#cartas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: solid black 1px;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+}
+
+.cartas :hover{
+    transform: scale(1.10);
+}
+.capa{
+    background-image: url(./img/giphy.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    visibility:visible;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}

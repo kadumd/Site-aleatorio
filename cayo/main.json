@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "titulo": "Dark Souls",
+        "capa": "https://giphy.com/embed/YleijU6Jfr0lzR708w",
+        "data-de-lancamento": "22 de setembro de 2021",
+        "categoria": "PLIM PLIM PLOM"
+    },
+    {
+        "id": 1,
+        "titulo": "Stardew Valley",
+        "capa": "",
+        "data-de-lancamento": "26 de fevereiro de 2016",
+        "categoria": "Talaricagem e plantações"
+    },
+    {
+        "id": 2,
+        "titulo": "Brawlhalla",
+        "capa": "https://i.ytimg.com/vi/DJf8BQT8vLg/maxresdefault.jpg",
+        "data-de-lancamento": "30 de abril de 2014",
+        "categoria": "Humilhação, choro e racismo"        
+    }
+]
