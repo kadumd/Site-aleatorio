@@ -3,18 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    color: aliceblue;
 }
 
 header{
     border: 2px solid rgba(255, 255, 255, 0.624);
 }
-header img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 5px solid rgba(255, 255, 255, 0.624);
-}
-
 
 header li{
     display: flex;
@@ -31,6 +26,26 @@ nav a:hover{
     color: rgba(255, 255, 255, 0.624);
     box-shadow: 3px 2px 30px rgba(255, 255, 255, 0.624);
     border-radius: 10px;
+    transform: scale(1.20);
+}
+
+#alterarcor {
+    height: 80px;
+    width: 80px;
+    border: 2px solid rgb(130, 1, 1);
+    border-radius: 20px;
+    background-color: rgba(243, 243, 243, 0.282);
+    color:rgb(255, 255, 255);
+    margin-left: 10vh;
+    transition: linear 300ms;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: dotted;
+}
+
+#alterarcor:hover{
+    transform: scale(1.2);
+    box-shadow: 3px 2px 30px rgb(255, 0, 0);
 }
 
 body{
@@ -64,6 +79,8 @@ main{
 
 .cartas :hover{
     transform: scale(1.10);
+    margin: 10px;
+    box-shadow: 20px 20px 20px 20px solid rgb(255, 31, 31);
 }
 .capa{
     background-image: url(./img/giphy.webp);

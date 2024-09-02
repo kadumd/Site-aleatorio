@@ -30,7 +30,7 @@ function exe(CriaçãoCartas) {
     main.appendChild(card)
 }
 
-const sommenu = new Audio('./img/Alpha.mp3');
+const sommenu = new Audio('./Alpha.mp3');
 document.addEventListener('DOMContentLoaded', () => {
 sommenu.play();
 });
@@ -54,9 +54,18 @@ childElements.forEach(element => {
 
 
 document.getElementById('alterarcor').addEventListener('click', function() {
-    if (document.body.style.backgroundColor === 'black') {
-        document.body.style.backgroundColor = '#333232f7';
+    const body = document.body;
+    const capa = document.querySelector('.capa');
+
+    if (body.style.backgroundImage === 'url("./img/giphy.webp")') {
+        body.style.backgroundImage = 'url("./img/dark.webp")';
+        if (capa) {
+            capa.style.backgroundImage = 'url("./img/dark.webp")';
+        }
     } else {
-        document.body.style.backgroundColor = 'black';
+        body.style.backgroundImage = 'url("./img/giphy.webp")';
+        if (capa) {
+            capa.style.backgroundImage = 'url("./img/giphy.webp")';
+        }
     }
-});
+})
